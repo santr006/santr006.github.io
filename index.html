@@ -66,40 +66,28 @@
 ä &auml;
 ö &ouml; -->
 
-
-<h2>Varsom Games</h2>
-<p class="center">A game system that gives a gaming console feeling. Phones are used as controls to play games together on a shared screen. The code is found on
-<a href="https://github.com/novalain/Varsom-Games">Github</a>.</p>
-<iframe src="https://player.vimeo.com/video/135973861" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-</iframe>
-<p class="center"><a href="https://vimeo.com/135973861">C Awards 2015 - Varsom Games</a> 
-from <a href="https://vimeo.com/visualisering">Visualiseringscenter C</a> 
-on <a href="https://vimeo.com">Vimeo</a>. The video is in Swedish but hopefully it gives some understanding about the project.</p>
+<h2>Master Thesis: Procedural world generator for platform games</h2>
+<p class="center">My master thesis is about creating a world generator for a platform game. 
+The generator creates a rhythm simulating how a player would press keys or buttons when playing 
+a level, where every button press represents the use of one of the character&rsquo;s abilities. 
+Then obstacles are placed to match the abilities and a level is formed that can be cleared 
+using the same abilities and timing as in the generated rhythm. 
 <br>
-
-<h2>Realistic real-time underwater caustics</h2>
-<p class="center">A simulation of how light is refracted through water to form caustics. Made by me alone in OpenGL. The code is found on
-<a href="https://github.com/santr006/TSBK03">Github</a> and uses shaders to render different passes to different textures that are used to make the final image.</p>
-<img class="center" src="convexSurfaceCaustics.png">
-<p class="center">The blue is the water surface, the green is a plane below the water and the 
-yellow dots are the positions where the photons emitted from the light source landed.
-The light source is straight above the water and the camera is in front of the scene looking down at the plane.</p>
-<br>
-
-<h2>Global illumination</h2>
-<p class="center">A ray tracer for lambertian reflectors and area light sources.
-The code is found on <a href="https://github.com/santr006/TNCG15">Github</a>.</p>
-<img class="center" src="room4ray400x400.png">
-<p class="center">A  room  that  is  closed  on  all  sides  except  the  one  with  the  camera  and  
-contains three implicit surfaces (spheres) and two area light sources. The walls and spheres are Lambertian
-reflectors. The image is 400x400 pixels large and was rendered with four rays per pixel.
-
-<h2>DICE programming competition 2016</h2>
-<p class="center">Me and my friend participated in DICE programming competition 2016 and our result is a 2D platformer game with 3D graphics as in the image below. The code can be found on <a href="https://github.com/Isafo/silver-pancake">Github</a>. </p>
-<img class="center" src="silverpancake.png">
-<p class="center">The player is the small cube on the left. It can jump and duck to get through the floor. The floor tiles and obstacles are randomly generated.</p>
-<br>
-
+An example can be that the rhythm includes running for five seconds and also pressing the jump button two times, 
+shown as the boxes on the time line below. The first jump press is smaller than the second one so the two jumps have different 
+durations. The character&rsquo;s movement can be seen below, together with an example level with a little step that makes 
+the player do a small jump and then a gap that makes the player do a longer jump, matching the rhythm.</p>
+<img class="center" src="timeLineWithJumps.png"><br>
+<img class="center" src="jumpLine.png"><br>
+<img class="center" src="ground.png"><br>
+<p class="center">This method was created by Gillian Smith, Mike Treanor, Jim Whitehead and Michael Mateas and was used to create 
+levels that went from left to right with some height differences but never going backwards. I wanted to build a world 
+where the path could go in any direction and therefore had to alter the original method to fill a room. The generation 
+can be controlled through a set of parameters and new obstacles and abilties can be added. An example room can look
+like this:</p>
+<img class="center" src="sidePath2.png">
+<p class="center">Light gray tiles mean air, dark gray mean ground, green elevator and red spikes. Black tiles are 
+empty tiles.</p>
 
 <h2>Co World Detectives - a Social VR game</h2>
 <p class="center"> Together with a classmate I developed an interactive VR game which gives a social experiance in VR for two people. Here is an example image from the game. </p>
@@ -118,6 +106,39 @@ While developing this game, user tests were made every other week which gave new
 
 This is an innovative and creative usage of a VR system where we have created a unique opportunity to collaborate in an entertaining environment. We think that this is a first step to make VR experiences much more social.
 </p>
+
+<h2>Varsom Games</h2>
+<p class="center">A game system that gives a gaming console feeling. Phones are used as controls to play games together on a shared screen. The code is found on
+<a href="https://github.com/novalain/Varsom-Games">Github</a>.</p>
+<iframe src="https://player.vimeo.com/video/135973861" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+</iframe>
+<p class="center"><a href="https://vimeo.com/135973861">C Awards 2015 - Varsom Games</a> 
+from <a href="https://vimeo.com/visualisering">Visualiseringscenter C</a> 
+on <a href="https://vimeo.com">Vimeo</a>. The video is in Swedish but hopefully it gives some understanding about the project.</p>
+<br>
+
+<h2>Global illumination</h2>
+<p class="center">A ray tracer for lambertian reflectors and area light sources.
+The code is found on <a href="https://github.com/santr006/TNCG15">Github</a>.</p>
+<img class="center" src="room4ray400x400.png">
+<p class="center">A  room  that  is  closed  on  all  sides  except  the  one  with  the  camera  and  
+contains three implicit surfaces (spheres) and two area light sources. The walls and spheres are Lambertian
+reflectors. The image is 400x400 pixels large and was rendered with four rays per pixel.
+
+<h2>Realistic real-time underwater caustics</h2>
+<p class="center">A simulation of how light is refracted through water to form caustics. Made by me alone in OpenGL. The code is found on
+<a href="https://github.com/santr006/TSBK03">Github</a> and uses shaders to render different passes to different textures that are used to make the final image.</p>
+<img class="center" src="convexSurfaceCaustics.png">
+<p class="center">The blue is the water surface, the green is a plane below the water and the 
+yellow dots are the positions where the photons emitted from the light source landed.
+The light source is straight above the water and the camera is in front of the scene looking down at the plane.</p>
+<br>
+
+<h2>DICE programming competition 2016</h2>
+<p class="center">Me and my friend participated in DICE programming competition 2016 and our result is a 2D platformer game with 3D graphics as in the image below. The code can be found on <a href="https://github.com/Isafo/silver-pancake">Github</a>. </p>
+<img class="center" src="silverpancake.png">
+<p class="center">The player is the small cube on the left. It can jump and duck to get through the floor. The floor tiles and obstacles are randomly generated.</p>
+<br>
 
 </center>
 

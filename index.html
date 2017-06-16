@@ -125,14 +125,30 @@ The code is found on <a href="https://github.com/santr006/TNCG15">Github</a>.</p
 contains three implicit surfaces (spheres) and two area light sources. The walls and spheres are Lambertian
 reflectors. The image is 400x400 pixels large and was rendered with four rays per pixel.
 
+<h2>Procedural water surface</h2>
+<p class="center">The simulation uses the method described in <i>Simulating Ocean Water</i> by Jerry 
+Tessendorf which sums the influence on points on a plane, of a set number of sinusiods. The sum is 
+calculated with Fourier transform. The images below show the result and I have marked a single wave&rsquo;s
+position as it moves through the water surface as time passes.</p>
+<img class="center" src="sideWave1text.png"><br><br>
+<img class="center" src="sideWave2text.png"><br><br>
+<img class="center" src="sideWave3text.png"><br><br>
+
 <h2>Realistic real-time underwater caustics</h2>
 <p class="center">A simulation of how light is refracted through water to form caustics. Made by me alone in OpenGL. The code is found on
-<a href="https://github.com/santr006/TSBK03">Github</a> and uses shaders to render different passes to different textures that are used to make the final image.</p>
+<a href="https://github.com/santr006/TSBK03">Github</a> and uses shaders to render different passes to different textures that are used to make the final image. 
+The method I followed is from a paper with the name <i>Realistic Real-time Underwater Caustics and Godrays</i> by C. Papadopoulos and 
+G. Papaioannou.</p>
 <img class="center" src="convexSurfaceCaustics.png">
 <p class="center">The blue is the water surface, the green is a plane below the water and the 
 yellow dots are the positions where the photons emitted from the light source landed.
 The light source is straight above the water and the camera is in front of the scene looking down at the plane.</p>
-<br>
+
+<h2>Cloth simulation</h2>
+<p class="center">Created together with two classmates in C++, using OpenGL, glfw, glm and glew.
+The simulation respresents the cloth as multiple small points of mass that are connected through springs
+which hold the cloth together when forces push at it.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/atfKY2WpPoM" frameborder="0" allowfullscreen></iframe>
 
 <h2>DICE programming competition 2016</h2>
 <p class="center">Me and my friend participated in DICE programming competition 2016 and our result is a 2D platformer game with 3D graphics as in the image below. The code can be found on <a href="https://github.com/Isafo/silver-pancake">Github</a>. </p>
@@ -140,6 +156,7 @@ The light source is straight above the water and the camera is in front of the s
 <p class="center">The player is the small cube on the left. It can jump and duck to get through the floor. The floor tiles and obstacles are randomly generated.</p>
 <br>
 
+<br>
 </center>
 
     </div><!-- /.container -->
